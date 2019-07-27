@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DB_freeQueueModelStoreContainer" CdmEntityContainer="DB_freeQueueEntities">
+    <EntitySetMapping Name="tbl_menuAddittions">
+      <EntityTypeMapping TypeName="DB_freeQueueModel.tbl_menuAddittions">
+        <MappingFragment StoreEntitySet="tbl_menuAddittions">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Product" ColumnName="Product" />
+          <ScalarProperty Name="Addition" ColumnName="Addition" />
+          <ScalarProperty Name="AddtionPrice" ColumnName="AddtionPrice" />
+          <ScalarProperty Name="AdditionStatus" ColumnName="AdditionStatus" />
+          <ScalarProperty Name="AdditionImage" ColumnName="AdditionImage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_menuTastes">
+      <EntityTypeMapping TypeName="DB_freeQueueModel.tbl_menuTastes">
+        <MappingFragment StoreEntitySet="tbl_menuTastes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Product" ColumnName="Product" />
+          <ScalarProperty Name="Taste" ColumnName="Taste" />
+          <ScalarProperty Name="TasteStatus" ColumnName="TasteStatus" />
+          <ScalarProperty Name="TasteImage" ColumnName="TasteImage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_productsCategories">
+      <EntityTypeMapping TypeName="DB_freeQueueModel.tbl_productsCategories">
+        <MappingFragment StoreEntitySet="tbl_productsCategories">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Store" ColumnName="Store" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_purchases">
+      <EntityTypeMapping TypeName="DB_freeQueueModel.tbl_purchases">
+        <MappingFragment StoreEntitySet="tbl_purchases">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="StoreId" ColumnName="StoreId" />
+          <ScalarProperty Name="PurchaseDate" ColumnName="PurchaseDate" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="CustomerPhone" ColumnName="CustomerPhone" />
+          <ScalarProperty Name="CreditCard" ColumnName="CreditCard" />
+          <ScalarProperty Name="CreditDate" ColumnName="CreditDate" />
+          <ScalarProperty Name="CreditDigits" ColumnName="CreditDigits" />
+          <ScalarProperty Name="DeliveryAddress" ColumnName="DeliveryAddress" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="ReservedSeats" ColumnName="ReservedSeats" />
+          <ScalarProperty Name="Club" ColumnName="Club" />
+          <ScalarProperty Name="Tip" ColumnName="Tip" />
+          <ScalarProperty Name="PurchaseSum" ColumnName="PurchaseSum" />
+          <ScalarProperty Name="ReceiptTime" ColumnName="ReceiptTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_purchasesAdditions">
+      <EntityTypeMapping TypeName="DB_freeQueueModel.tbl_purchasesAdditions">
+        <MappingFragment StoreEntitySet="tbl_purchasesAdditions">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Product" ColumnName="Product" />
+          <ScalarProperty Name="Addition" ColumnName="Addition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_purchasesProducts">
+      <EntityTypeMapping TypeName="DB_freeQueueModel.tbl_purchasesProducts">
+        <MappingFragment StoreEntitySet="tbl_purchasesProducts">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PurchaseId" ColumnName="PurchaseId" />
+          <ScalarProperty Name="Product" ColumnName="Product" />
+          <ScalarProperty Name="ProductCount" ColumnName="ProductCount" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_purchasesTastes">
+      <EntityTypeMapping TypeName="DB_freeQueueModel.tbl_purchasesTastes">
+        <MappingFragment StoreEntitySet="tbl_purchasesTastes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Product" ColumnName="Product" />
+          <ScalarProperty Name="Taste" ColumnName="Taste" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_stores">
+      <EntityTypeMapping TypeName="DB_freeQueueModel.tbl_stores">
+        <MappingFragment StoreEntitySet="tbl_stores">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="StoreName" ColumnName="StoreName" />
+          <ScalarProperty Name="StoreAddress" ColumnName="StoreAddress" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="About" ColumnName="About" />
+          <ScalarProperty Name="KashrutCertification" ColumnName="KashrutCertification" />
+          <ScalarProperty Name="Img" ColumnName="Img" />
+          <ScalarProperty Name="StoreCategory" ColumnName="StoreCategory" />
+          <ScalarProperty Name="ReservedSeats" ColumnName="ReservedSeats" />
+          <ScalarProperty Name="Club" ColumnName="Club" />
+          <ScalarProperty Name="Tip" ColumnName="Tip" />
+          <ScalarProperty Name="StoreLoad" ColumnName="StoreLoad" />
+          <ScalarProperty Name="Bank" ColumnName="Bank" />
+          <ScalarProperty Name="Brunch" ColumnName="Brunch" />
+          <ScalarProperty Name="Account" ColumnName="Account" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_storesActivityTime">
+      <EntityTypeMapping TypeName="DB_freeQueueModel.tbl_storesActivityTime">
+        <MappingFragment StoreEntitySet="tbl_storesActivityTime">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Store" ColumnName="Store" />
+          <ScalarProperty Name="ActivityDay" ColumnName="ActivityDay" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_storesMenu">
+      <EntityTypeMapping TypeName="DB_freeQueueModel.tbl_storesMenu">
+        <MappingFragment StoreEntitySet="tbl_storesMenu">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Store" ColumnName="Store" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ProductCategory" ColumnName="ProductCategory" />
+          <ScalarProperty Name="ProductPrice" ColumnName="ProductPrice" />
+          <ScalarProperty Name="ProductStatus" ColumnName="ProductStatus" />
+          <ScalarProperty Name="QuickProduct" ColumnName="QuickProduct" />
+          <ScalarProperty Name="ProductImage" ColumnName="ProductImage" />
+          <ScalarProperty Name="PreperationTime" ColumnName="PreperationTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

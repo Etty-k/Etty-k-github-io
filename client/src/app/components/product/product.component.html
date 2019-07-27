@@ -1,0 +1,11 @@
+<label>{{thisProduct.productName}}</label>
+<img width="300" src="{{thisProduct.productImage}}"/>
+<label>{{thisProduct.productPrice}}</label>
+<label>{{this.productCategory}}</label>
+
+<!-- <app-tastes></app-tastes>
+<app-additions></app-additions> -->
+
+<input type="number" #quantity />
+
+<button (click)="addToCart(quantity)" >הוסף לסל</button>

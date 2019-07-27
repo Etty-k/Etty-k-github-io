@@ -1,0 +1,8 @@
+<div *ngFor="let p of products" (click)="productChosen(p.id)">
+  <img width="200" src="{{p.productImage}}">
+  <br>
+  <label>{{p.productName}}</label>
+  <br>
+  <label>{{p.productPrice}}</label>
+  
+</div>

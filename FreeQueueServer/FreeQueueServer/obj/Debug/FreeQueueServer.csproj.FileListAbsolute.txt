@@ -1,0 +1,136 @@
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\obj\Debug\FreeQueueServer.csproj.CoreCompileInputs.cache
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\FreeQueueServer.dll.config
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\FreeQueueServer.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\FreeQueueServer.pdb
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\csc.exe
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\csc.exe.config
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\csc.rsp
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\csi.exe
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\csi.exe.config
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\csi.rsp
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\Microsoft.Managed.Core.targets
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\System.AppContext.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\System.Collections.Immutable.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\System.Console.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\System.IO.Compression.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\System.IO.FileSystem.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\System.IO.Pipes.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\System.Reflection.Metadata.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\System.Security.AccessControl.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\System.Security.Claims.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\System.Security.Principal.Windows.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\System.ValueTuple.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\System.Xml.XmlDocument.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\System.Xml.XPath.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\vbc.exe
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\vbc.exe.config
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\vbc.rsp
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\VBCSCompiler.exe
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\roslyn\VBCSCompiler.exe.config
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\EntityFramework.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\EntityFramework.SqlServer.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\Newtonsoft.Json.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\System.Net.Http.Formatting.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\System.Web.Http.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\System.Web.Http.WebHost.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\EntityFramework.xml
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\EntityFramework.SqlServer.xml
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\Newtonsoft.Json.xml
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\System.Net.Http.Formatting.xml
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\System.Web.Http.xml
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\System.Web.Http.WebHost.xml
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\obj\Debug\FreeQueueServer.csproj.CopyComplete
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\obj\Debug\FreeQueueServer.dll
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\obj\Debug\FreeQueueServer.pdb
+D:\programming\project\develop\FreeQueueServer\FreeQueueServer\obj\Debug\FreeQueueServer.csprojAssemblyReference.cache
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\FreeQueueServer.dll.config
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\FreeQueueServer.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\FreeQueueServer.pdb
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\csc.exe
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\csc.exe.config
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\csc.rsp
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\csi.exe
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\csi.exe.config
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\csi.rsp
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\Microsoft.CodeAnalysis.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\Microsoft.CSharp.Core.targets
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\Microsoft.Managed.Core.targets
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\Microsoft.VisualBasic.Core.targets
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\System.AppContext.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\System.Collections.Immutable.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\System.Console.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\System.Diagnostics.StackTrace.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\System.IO.Compression.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\System.IO.FileSystem.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\System.IO.FileSystem.Primitives.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\System.IO.Pipes.AccessControl.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\System.IO.Pipes.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\System.Reflection.Metadata.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\System.Security.AccessControl.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\System.Security.Claims.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\System.Security.Cryptography.Encoding.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\System.Security.Cryptography.Primitives.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\System.Security.Principal.Windows.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\System.Text.Encoding.CodePages.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\System.ValueTuple.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\System.Xml.ReaderWriter.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\System.Xml.XmlDocument.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\System.Xml.XPath.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\System.Xml.XPath.XDocument.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\vbc.exe
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\vbc.exe.config
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\vbc.rsp
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\VBCSCompiler.exe
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\roslyn\VBCSCompiler.exe.config
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\EntityFramework.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\EntityFramework.SqlServer.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\Newtonsoft.Json.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\System.Net.Http.Formatting.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\System.Web.Http.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\System.Web.Http.WebHost.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\EntityFramework.xml
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\EntityFramework.SqlServer.xml
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\Newtonsoft.Json.xml
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\System.Net.Http.Formatting.xml
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\System.Web.Http.xml
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\System.Web.Http.WebHost.xml
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\obj\Debug\FreeQueueServer.csprojAssemblyReference.cache
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\obj\Debug\FreeQueueServer.csproj.CoreCompileInputs.cache
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\obj\Debug\FreeQueueServer.csproj.CopyComplete
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\obj\Debug\FreeQueueServer.dll
+Z:\B\Etti Kraus\13 פרוייקט גמר\29.5.19\FreeQueueServer\FreeQueueServer\obj\Debug\FreeQueueServer.pdb

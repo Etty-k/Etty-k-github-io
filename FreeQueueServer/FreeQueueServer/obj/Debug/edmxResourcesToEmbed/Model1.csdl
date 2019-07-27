@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_freeQueueModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tbl_menuAddittions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Product" Type="Int32" />
+    <Property Name="Addition" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AddtionPrice" Type="Double" />
+    <Property Name="AdditionStatus" Type="Boolean" />
+    <Property Name="AdditionImage" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tbl_storesMenu" Relationship="Self.FK__tbl_menuA__Produ__628FA481" FromRole="tbl_menuAddittions" ToRole="tbl_storesMenu" />
+    <NavigationProperty Name="tbl_purchasesAdditions" Relationship="Self.FK__tbl_purch__Addit__6FE99F9F" FromRole="tbl_menuAddittions" ToRole="tbl_purchasesAdditions" />
+  </EntityType>
+  <EntityType Name="tbl_menuTastes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Product" Type="Int32" />
+    <Property Name="Taste" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="TasteStatus" Type="Boolean" />
+    <Property Name="TasteImage" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tbl_storesMenu" Relationship="Self.FK__tbl_menuT__Produ__656C112C" FromRole="tbl_menuTastes" ToRole="tbl_storesMenu" />
+    <NavigationProperty Name="tbl_purchasesTastes" Relationship="Self.FK__tbl_purch__Taste__73BA3083" FromRole="tbl_menuTastes" ToRole="tbl_purchasesTastes" />
+  </EntityType>
+  <EntityType Name="tbl_productsCategories">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Store" Type="Int32" />
+    <Property Name="Category" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tbl_stores" Relationship="Self.FK__tbl_produ__Store__5BE2A6F2" FromRole="tbl_productsCategories" ToRole="tbl_stores" />
+    <NavigationProperty Name="tbl_storesMenu" Relationship="Self.FK__tbl_store__Produ__5FB337D6" FromRole="tbl_productsCategories" ToRole="tbl_storesMenu" />
+  </EntityType>
+  <EntityType Name="tbl_purchases">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StoreId" Type="Int32" />
+    <Property Name="PurchaseDate" Type="DateTime" Precision="3" />
+    <Property Name="CustomerName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CustomerPhone" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="CreditCard" Type="String" MaxLength="18" FixedLength="false" Unicode="true" />
+    <Property Name="CreditDate" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="CreditDigits" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="DeliveryAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GroupName" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="ReservedSeats" Type="Int32" />
+    <Property Name="Club" Type="Boolean" />
+    <Property Name="Tip" Type="Double" />
+    <Property Name="PurchaseSum" Type="Double" />
+    <Property Name="ReceiptTime" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tbl_purchasesProducts" Relationship="Self.FK__tbl_purch__Purch__6B24EA82" FromRole="tbl_purchases" ToRole="tbl_purchasesProducts" />
+    <NavigationProperty Name="tbl_stores" Relationship="Self.FK__tbl_purch__Store__68487DD7" FromRole="tbl_purchases" ToRole="tbl_stores" />
+  </EntityType>
+  <EntityType Name="tbl_purchasesAdditions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Product" Type="Int32" />
+    <Property Name="Addition" Type="Int32" />
+    <NavigationProperty Name="tbl_menuAddittions" Relationship="Self.FK__tbl_purch__Addit__6FE99F9F" FromRole="tbl_purchasesAdditions" ToRole="tbl_menuAddittions" />
+    <NavigationProperty Name="tbl_purchasesProducts" Relationship="Self.FK__tbl_purch__Produ__6EF57B66" FromRole="tbl_purchasesAdditions" ToRole="tbl_purchasesProducts" />
+  </EntityType>
+  <EntityType Name="tbl_purchasesProducts">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PurchaseId" Type="Int32" />
+    <Property Name="Product" Type="Int32" />
+    <Property Name="ProductCount" Type="Int32" />
+    <Property Name="Price" Type="Double" />
+    <NavigationProperty Name="tbl_purchases" Relationship="Self.FK__tbl_purch__Purch__6B24EA82" FromRole="tbl_purchasesProducts" ToRole="tbl_purchases" />
+    <NavigationProperty Name="tbl_purchasesAdditions" Relationship="Self.FK__tbl_purch__Produ__6EF57B66" FromRole="tbl_purchasesProducts" ToRole="tbl_purchasesAdditions" />
+    <NavigationProperty Name="tbl_storesMenu" Relationship="Self.FK__tbl_purch__Produ__6C190EBB" FromRole="tbl_purchasesProducts" ToRole="tbl_storesMenu" />
+    <NavigationProperty Name="tbl_purchasesTastes" Relationship="Self.FK__tbl_purch__Produ__72C60C4A" FromRole="tbl_purchasesProducts" ToRole="tbl_purchasesTastes" />
+  </EntityType>
+  <EntityType Name="tbl_purchasesTastes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Product" Type="Int32" />
+    <Property Name="Taste" Type="Int32" />
+    <NavigationProperty Name="tbl_menuTastes" Relationship="Self.FK__tbl_purch__Taste__73BA3083" FromRole="tbl_purchasesTastes" ToRole="tbl_menuTastes" />
+    <NavigationProperty Name="tbl_purchasesProducts" Relationship="Self.FK__tbl_purch__Produ__72C60C4A" FromRole="tbl_purchasesTastes" ToRole="tbl_purchasesProducts" />
+  </EntityType>
+  <EntityType Name="tbl_stores">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StoreName" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="StoreAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="About" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="KashrutCertification" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Img" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="StoreCategory" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="ReservedSeats" Type="Boolean" />
+    <Property Name="Club" Type="Boolean" />
+    <Property Name="Tip" Type="Boolean" />
+    <Property Name="StoreLoad" Type="Boolean" />
+    <Property Name="Bank" Type="Int32" />
+    <Property Name="Brunch" Type="Int32" />
+    <Property Name="Account" Type="String" MaxLength="13" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tbl_productsCategories" Relationship="Self.FK__tbl_produ__Store__5BE2A6F2" FromRole="tbl_stores" ToRole="tbl_productsCategories" />
+    <NavigationProperty Name="tbl_purchases" Relationship="Self.FK__tbl_purch__Store__68487DD7" FromRole="tbl_stores" ToRole="tbl_purchases" />
+    <NavigationProperty Name="tbl_storesActivityTime" Relationship="Self.FK__tbl_store__Store__59063A47" FromRole="tbl_stores" ToRole="tbl_storesActivityTime" />
+    <NavigationProperty Name="tbl_storesMenu" Relationship="Self.FK__tbl_store__Store__5EBF139D" FromRole="tbl_stores" ToRole="tbl_storesMenu" />
+  </EntityType>
+  <EntityType Name="tbl_storesActivityTime">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Store" Type="Int32" />
+    <Property Name="ActivityDay" Type="Int32" />
+    <Property Name="StartTime" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="EndTime" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tbl_stores" Relationship="Self.FK__tbl_store__Store__59063A47" FromRole="tbl_storesActivityTime" ToRole="tbl_stores" />
+  </EntityType>
+  <EntityType Name="tbl_storesMenu">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Store" Type="Int32" />
+    <Property Name="ProductName" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="ProductCategory" Type="Int32" />
+    <Property Name="ProductPrice" Type="Double" />
+    <Property Name="ProductStatus" Type="Boolean" />
+    <Property Name="QuickProduct" Type="Boolean" />
+    <Property Name="ProductImage" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="PreperationTime" Type="Int32" />
+    <NavigationProperty Name="tbl_menuAddittions" Relationship="Self.FK__tbl_menuA__Produ__628FA481" FromRole="tbl_storesMenu" ToRole="tbl_menuAddittions" />
+    <NavigationProperty Name="tbl_menuTastes" Relationship="Self.FK__tbl_menuT__Produ__656C112C" FromRole="tbl_storesMenu" ToRole="tbl_menuTastes" />
+    <NavigationProperty Name="tbl_productsCategories" Relationship="Self.FK__tbl_store__Produ__5FB337D6" FromRole="tbl_storesMenu" ToRole="tbl_productsCategories" />
+    <NavigationProperty Name="tbl_purchasesProducts" Relationship="Self.FK__tbl_purch__Produ__6C190EBB" FromRole="tbl_storesMenu" ToRole="tbl_purchasesProducts" />
+    <NavigationProperty Name="tbl_stores" Relationship="Self.FK__tbl_store__Store__5EBF139D" FromRole="tbl_storesMenu" ToRole="tbl_stores" />
+  </EntityType>
+  <Association Name="FK__tbl_menuA__Produ__628FA481">
+    <End Role="tbl_storesMenu" Type="Self.tbl_storesMenu" Multiplicity="0..1" />
+    <End Role="tbl_menuAddittions" Type="Self.tbl_menuAddittions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_storesMenu">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_menuAddittions">
+        <PropertyRef Name="Product" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_purch__Addit__6FE99F9F">
+    <End Role="tbl_menuAddittions" Type="Self.tbl_menuAddittions" Multiplicity="0..1" />
+    <End Role="tbl_purchasesAdditions" Type="Self.tbl_purchasesAdditions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_menuAddittions">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_purchasesAdditions">
+        <PropertyRef Name="Addition" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_menuT__Produ__656C112C">
+    <End Role="tbl_storesMenu" Type="Self.tbl_storesMenu" Multiplicity="0..1" />
+    <End Role="tbl_menuTastes" Type="Self.tbl_menuTastes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_storesMenu">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_menuTastes">
+        <PropertyRef Name="Product" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_purch__Taste__73BA3083">
+    <End Role="tbl_menuTastes" Type="Self.tbl_menuTastes" Multiplicity="0..1" />
+    <End Role="tbl_purchasesTastes" Type="Self.tbl_purchasesTastes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_menuTastes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_purchasesTastes">
+        <PropertyRef Name="Taste" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_produ__Store__5BE2A6F2">
+    <End Role="tbl_stores" Type="Self.tbl_stores" Multiplicity="0..1" />
+    <End Role="tbl_productsCategories" Type="Self.tbl_productsCategories" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_stores">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_productsCategories">
+        <PropertyRef Name="Store" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_store__Produ__5FB337D6">
+    <End Role="tbl_productsCategories" Type="Self.tbl_productsCategories" Multiplicity="0..1" />
+    <End Role="tbl_storesMenu" Type="Self.tbl_storesMenu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_productsCategories">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_storesMenu">
+        <PropertyRef Name="ProductCategory" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_purch__Purch__6B24EA82">
+    <End Role="tbl_purchases" Type="Self.tbl_purchases" Multiplicity="0..1" />
+    <End Role="tbl_purchasesProducts" Type="Self.tbl_purchasesProducts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_purchases">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_purchasesProducts">
+        <PropertyRef Name="PurchaseId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_purch__Store__68487DD7">
+    <End Role="tbl_stores" Type="Self.tbl_stores" Multiplicity="0..1" />
+    <End Role="tbl_purchases" Type="Self.tbl_purchases" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_stores">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_purchases">
+        <PropertyRef Name="StoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_purch__Produ__6EF57B66">
+    <End Role="tbl_purchasesProducts" Type="Self.tbl_purchasesProducts" Multiplicity="0..1" />
+    <End Role="tbl_purchasesAdditions" Type="Self.tbl_purchasesAdditions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_purchasesProducts">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_purchasesAdditions">
+        <PropertyRef Name="Product" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_purch__Produ__6C190EBB">
+    <End Role="tbl_storesMenu" Type="Self.tbl_storesMenu" Multiplicity="0..1" />
+    <End Role="tbl_purchasesProducts" Type="Self.tbl_purchasesProducts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_storesMenu">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_purchasesProducts">
+        <PropertyRef Name="Product" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_purch__Produ__72C60C4A">
+    <End Role="tbl_purchasesProducts" Type="Self.tbl_purchasesProducts" Multiplicity="0..1" />
+    <End Role="tbl_purchasesTastes" Type="Self.tbl_purchasesTastes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_purchasesProducts">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_purchasesTastes">
+        <PropertyRef Name="Product" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_store__Store__59063A47">
+    <End Role="tbl_stores" Type="Self.tbl_stores" Multiplicity="0..1" />
+    <End Role="tbl_storesActivityTime" Type="Self.tbl_storesActivityTime" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_stores">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_storesActivityTime">
+        <PropertyRef Name="Store" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_store__Store__5EBF139D">
+    <End Role="tbl_stores" Type="Self.tbl_stores" Multiplicity="0..1" />
+    <End Role="tbl_storesMenu" Type="Self.tbl_storesMenu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_stores">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_storesMenu">
+        <PropertyRef Name="Store" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DB_freeQueueEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tbl_menuAddittions" EntityType="Self.tbl_menuAddittions" />
+    <EntitySet Name="tbl_menuTastes" EntityType="Self.tbl_menuTastes" />
+    <EntitySet Name="tbl_productsCategories" EntityType="Self.tbl_productsCategories" />
+    <EntitySet Name="tbl_purchases" EntityType="Self.tbl_purchases" />
+    <EntitySet Name="tbl_purchasesAdditions" EntityType="Self.tbl_purchasesAdditions" />
+    <EntitySet Name="tbl_purchasesProducts" EntityType="Self.tbl_purchasesProducts" />
+    <EntitySet Name="tbl_purchasesTastes" EntityType="Self.tbl_purchasesTastes" />
+    <EntitySet Name="tbl_stores" EntityType="Self.tbl_stores" />
+    <EntitySet Name="tbl_storesActivityTime" EntityType="Self.tbl_storesActivityTime" />
+    <EntitySet Name="tbl_storesMenu" EntityType="Self.tbl_storesMenu" />
+    <AssociationSet Name="FK__tbl_menuA__Produ__628FA481" Association="Self.FK__tbl_menuA__Produ__628FA481">
+      <End Role="tbl_storesMenu" EntitySet="tbl_storesMenu" />
+      <End Role="tbl_menuAddittions" EntitySet="tbl_menuAddittions" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_purch__Addit__6FE99F9F" Association="Self.FK__tbl_purch__Addit__6FE99F9F">
+      <End Role="tbl_menuAddittions" EntitySet="tbl_menuAddittions" />
+      <End Role="tbl_purchasesAdditions" EntitySet="tbl_purchasesAdditions" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_menuT__Produ__656C112C" Association="Self.FK__tbl_menuT__Produ__656C112C">
+      <End Role="tbl_storesMenu" EntitySet="tbl_storesMenu" />
+      <End Role="tbl_menuTastes" EntitySet="tbl_menuTastes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_purch__Taste__73BA3083" Association="Self.FK__tbl_purch__Taste__73BA3083">
+      <End Role="tbl_menuTastes" EntitySet="tbl_menuTastes" />
+      <End Role="tbl_purchasesTastes" EntitySet="tbl_purchasesTastes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_produ__Store__5BE2A6F2" Association="Self.FK__tbl_produ__Store__5BE2A6F2">
+      <End Role="tbl_stores" EntitySet="tbl_stores" />
+      <End Role="tbl_productsCategories" EntitySet="tbl_productsCategories" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_store__Produ__5FB337D6" Association="Self.FK__tbl_store__Produ__5FB337D6">
+      <End Role="tbl_productsCategories" EntitySet="tbl_productsCategories" />
+      <End Role="tbl_storesMenu" EntitySet="tbl_storesMenu" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_purch__Purch__6B24EA82" Association="Self.FK__tbl_purch__Purch__6B24EA82">
+      <End Role="tbl_purchases" EntitySet="tbl_purchases" />
+      <End Role="tbl_purchasesProducts" EntitySet="tbl_purchasesProducts" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_purch__Store__68487DD7" Association="Self.FK__tbl_purch__Store__68487DD7">
+      <End Role="tbl_stores" EntitySet="tbl_stores" />
+      <End Role="tbl_purchases" EntitySet="tbl_purchases" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_purch__Produ__6EF57B66" Association="Self.FK__tbl_purch__Produ__6EF57B66">
+      <End Role="tbl_purchasesProducts" EntitySet="tbl_purchasesProducts" />
+      <End Role="tbl_purchasesAdditions" EntitySet="tbl_purchasesAdditions" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_purch__Produ__6C190EBB" Association="Self.FK__tbl_purch__Produ__6C190EBB">
+      <End Role="tbl_storesMenu" EntitySet="tbl_storesMenu" />
+      <End Role="tbl_purchasesProducts" EntitySet="tbl_purchasesProducts" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_purch__Produ__72C60C4A" Association="Self.FK__tbl_purch__Produ__72C60C4A">
+      <End Role="tbl_purchasesProducts" EntitySet="tbl_purchasesProducts" />
+      <End Role="tbl_purchasesTastes" EntitySet="tbl_purchasesTastes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_store__Store__59063A47" Association="Self.FK__tbl_store__Store__59063A47">
+      <End Role="tbl_stores" EntitySet="tbl_stores" />
+      <End Role="tbl_storesActivityTime" EntitySet="tbl_storesActivityTime" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_store__Store__5EBF139D" Association="Self.FK__tbl_store__Store__5EBF139D">
+      <End Role="tbl_stores" EntitySet="tbl_stores" />
+      <End Role="tbl_storesMenu" EntitySet="tbl_storesMenu" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

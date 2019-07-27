@@ -1,0 +1,7 @@
+<table>
+  <tr *ngFor="let p of productsList">
+    <td><a [routerLink]="['/']">{{p.productName}}   {{p.productPrice}}</a>
+      <img width="100" src="{{p.productImage}}">
+    </td>
+  </tr>
+</table>
